@@ -1,0 +1,11 @@
+ipykernel
+numpy==1.19.5
+scipy==1.6.3
+pandas==1.2.4
+matplotlib==3.4.2
+scikit-learn==0.23.2
+keras_tuner==1.0.3
+tensorflow
+spacy
+tqdm
+gensim==4.0.0
