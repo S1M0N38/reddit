@@ -1,0 +1,19 @@
+{
+  "id": "s1m0n38/simone-bertolotto-857533",
+  "id_no": 19985783,
+  "title": "Simone Bertolotto 857533",
+  "code_file": "simone-bertolotto-857533.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "s1m0n38/simone-bertolotto-857533"
+  ],
+  "competition_sources": [
+    "datamining2021"
+  ]
+}
