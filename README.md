@@ -88,7 +88,8 @@ cd working && \
    jupyter nbconvert \
    --to python --stdout \
    --TagRemovePreprocessor.remove_cell_tags 'cmd' \
-   simone-bertolotto-857533.ipynb | MPLBACKEND='agg' python && cd ..
+   simone-bertolotto-857533.ipynb | \
+   PYTHONWARNINGS='ignore' MPLBACKEND='agg' python && cd ..
 ```
 
 The script execution is fast because does not need to draw the plot on the screen (matplotlib backend is `agg`).
