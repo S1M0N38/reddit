@@ -70,7 +70,22 @@ Maybe previous versions works but it is not guaranteed.
    jupyter notebook --config=config.py
    ```
 
-## Download Kaggle outputs
+## Interact with Kaggle kernel
+
+Dowload notebook from kaggle and replace the local version
+
+```bash
+kaggle kernels pull -p working -m s1m0n38/simone-bertolotto-857533
+```
+
+(At the moment there is an [open issue](https://github.com/Kaggle/kaggle-api/issues/377)
+about `kernel-metadata.json` generation)
+
+Upload local version of the notebook to Kaggle and start the exectuion
+
+```bash
+kaggle kernels push -p working
+```
 
 During the exectution of Kaggle notebook, some output file are generated. These are trained sklearn estimators,
 learning curves, csv solutions, ... You can download the last version of output files with:
