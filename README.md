@@ -4,8 +4,10 @@ Gender classifier for reddit comments
 
 ## Requirements
 
-- python >= 3.9: check with `python3 --version`
-- jupyter-notebook >=6.4: check with `jupyter-notebook --version`
+- python (3.9.6) check with `python3 --version`
+- jupyter notebook (6.4.0): check with `jupyter notebook --version`
+- jupyter nbconvert (6.0.7): check with `jupyter nbconvert --version`
+  
 Maybe previous versions works but it is not guaranteed.
 
 ## Installation
