@@ -81,7 +81,7 @@ kaggle kernels output s1m0n38/simone-bertolotto-857533 -p working
 
 Working with jupter notebook is great but sometimes code can become messy. Some cell are move up or down, some are deleted
 and the notebook stop working when try to run top to bottom. The following command convert the notebook into python script and then
-run it. This ensure that the notebook will be working. 
+run it. This ensure that the notebook will be working.
 
 ```bash
 cd working && \
