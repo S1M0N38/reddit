@@ -56,6 +56,9 @@ Maybe previous versions works but it is not guaranteed.
    python -m ipykernel install
    ```
 
+8. (Optional) download the trained model from https://ufile.io/5m99mlwy
+   and then unzip the folder into `reddit/working`.
+
 ## Working setup
 
 1. Move inside the repository
