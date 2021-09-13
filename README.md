@@ -53,7 +53,7 @@ Maybe previous versions works but it is not guaranteed.
 7. Install venv as jupyter kernel
 
    ```bash
-   python -m ipykernel install --name 'reddit'
+   python -m ipykernel install
    ```
 
 ## Working setup
@@ -64,10 +64,10 @@ Maybe previous versions works but it is not guaranteed.
    cd reddit
    ```
 
-2. Start jupyter-notebook with --config flag and check that `reddit` is the active kernel.
+2. Start jupyter-notebook with --config flag and check that the right kernel is active.
 
    ```bash
-   jupyter notebook --config=config.py
+   jupyter notebook --no-browser --notebook-dir working
    ```
 
 ## Interact with Kaggle kernel
@@ -79,7 +79,7 @@ kaggle kernels pull -p working -m s1m0n38/simone-bertolotto-857533
 ```
 
 (At the moment there is an [open issue](https://github.com/Kaggle/kaggle-api/issues/377)
-about `kernel-metadata.json` generation)
+about `kernel-metadata.json` generation. UPDATE: now the bug is fixed and issue is closed.)
 
 Upload local version of the notebook to Kaggle and start the exectuion
 
@@ -93,6 +93,7 @@ learning curves, csv solutions, ... You can download the last version of output 
 ```bash
 kaggle kernels output s1m0n38/simone-bertolotto-857533 -p working
 ```
+(Bug in Kaggle API, output command does not dowload all the files)
 
 ## Testing notebook
 
@@ -106,7 +107,7 @@ cd working && \
    --to python --stdout \
    --TagRemovePreprocessor.remove_cell_tags 'cmd' \
    simone-bertolotto-857533.ipynb | \
-   PYTHONWARNINGS='ignore' MPLBACKEND='agg' python && cd ..
+   PYTHONWARNINGS='ignore' MPLBACKEND='agg' python || cd ..
 ```
 
 The script execution is fast because does not need to draw the plot on the screen (matplotlib backend is `agg`).
