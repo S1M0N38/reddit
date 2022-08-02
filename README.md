@@ -1,6 +1,6 @@
 # Reddit
 
-Gender classifier for reddit comments (https://www.kaggle.com/c/datamining2021/leaderboard)
+Gender classifier for reddit comments ([kaggle competition](https://www.kaggle.com/c/datamining2021/leaderboard), 🏆#1)
 
 ## Requirements
 
